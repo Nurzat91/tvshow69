@@ -10,3 +10,4 @@ export type ApiShows = Omit<Shows,  'description', 'image'>;
 export interface ShowsList {
   [id: string]:ApiShows;
 }
+

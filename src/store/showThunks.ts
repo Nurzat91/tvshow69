@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { ApiShows, Shows, ShowsList } from "../types";
+import {ApiShows, Shows, ShowsList} from "../types";
 import axiosApi from "../axiosApi";
 
 export const fetchGetShow = createAsyncThunk(
@@ -40,7 +40,7 @@ export const fetchDataIdShow = createAsyncThunk(
           ...data,
           id,
           name: data.name,
-          // image: data.img,
+          summary: data.summary,
         }
       });
     }
